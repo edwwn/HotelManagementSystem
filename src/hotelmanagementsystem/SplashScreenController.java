@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 /**
@@ -56,7 +57,8 @@ public class SplashScreenController implements Initializable {
             }
             Stage  current = (Stage)image.getScene().getWindow();
             Scene scene = new Scene(root,720,600);
-            
+            loginScreen.initStyle(StageStyle.TRANSPARENT);
+                    
             loginScreen.setScene(scene);
             current.hide();
             loginScreen.show();

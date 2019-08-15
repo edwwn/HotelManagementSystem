@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.LoginScreenController">
-    
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="720.0" style="-fx-background-image:url(img/loginBackground.jpg)" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotelmanagementsystem.LoginScreenController">
+   <children>
+      <Pane layoutX="103.0" layoutY="50.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <JFXTextField fx:id="username" layoutX="113.0" layoutY="243.0" prefHeight="25.0" prefWidth="284.0" promptText="Enter UserName">
+               <font>
+                  <Font size="11.0" />
+               </font></JFXTextField>
+            <JFXTextField fx:id="password" layoutX="129.0" layoutY="313.0" prefHeight="25.0" prefWidth="257.0" promptText="Enter Password" />
+            <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="401.0" onMouseClicked="#loginButton" prefHeight="40.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="267.0" layoutY="401.0" prefHeight="40.0" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #09e2a7;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="181.0" fitWidth="192.0" layoutX="154.0" layoutY="38.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../img/hotelicon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>
